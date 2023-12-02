@@ -1,12 +1,12 @@
-import { data } from "../../data/data";
-import { FeatureSection } from "./FeatureSection";
+import { data } from '../../data/data';
+import { FeatureSection } from './FeatureSection';
 
 export const Features = () => {
   return (
-    <div className="center-flex flex-col gap-5 h-fit m-10">
-      <div className="upperText">{data.features.featuresUpperText}</div>
-      <div className="headingTitle w-fit">{data.features.featuresTitles}</div>
-      <div className="mt-10">
+    <div className='center-flex flex-col gap-5 h-fit m-10'>
+      <div className='upperText'>{data.features.featuresUpperText}</div>
+      <div className='headingTitle w-fit'>{data.features.featuresTitles}</div>
+      <div className='mt-10'>
         {[...Array(4)].map((_: any, i: number) => {
           return (
             <div key={i}>

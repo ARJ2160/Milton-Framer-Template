@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
+import { ReactNode } from 'react';
+import { twMerge } from 'tailwind-merge';
 
 interface ButtonProps {
   children: ReactNode;
@@ -13,7 +13,7 @@ export const Button = ({ children, classNames, onClick }: ButtonProps) => {
       <button
         onClick={onClick}
         className={twMerge(
-          "text-white font-bold py-2 px-4 rounded",
+          'text-white font-bold py-2 px-4 rounded',
           classNames
         )}
       >

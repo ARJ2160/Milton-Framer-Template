@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.css';
 import {
   AppImage,
   CTA,
@@ -6,12 +6,12 @@ import {
   Footer,
   Home,
   MoreFeatures,
-  Pricing,
-} from "./components/index";
+  Pricing
+} from './components/index';
 
 function App() {
   return (
-    <div className="px-[40px] pb-0">
+    <div className='px-[40px] pb-0'>
       <Home />
       <AppImage />
       <Features />
