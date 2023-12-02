@@ -6,6 +6,7 @@ import {
   Footer,
   Home,
   MoreFeatures,
+  Pricing,
 } from "./components/index";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <AppImage />
       <Features />
       <MoreFeatures />
+      <Pricing />
       <CTA />
       <Footer />
     </div>

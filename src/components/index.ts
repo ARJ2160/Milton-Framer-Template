@@ -9,5 +9,6 @@ export { Footer } from "./Footer";
 export { Home } from "./Home";
 export { MoreFeatures } from "./MoreFeatures";
 export { Navbar } from "./Navbar";
+export { Pricing } from "./Pricing";
 export { UserBlob } from "./UserBlob";
 export { WebsiteLogo } from "./WebsiteLogo";

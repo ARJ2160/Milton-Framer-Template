@@ -1,13 +1,16 @@
+// Features
 import FeatureImg1 from "../src/assets/images/Features/Feature1.webp";
 import FeatureImg2 from "../src/assets/images/Features/Feature2.webp";
 import FeatureImg3 from "../src/assets/images/Features/Feature3.webp";
 import FeatureImg4 from "../src/assets/images/Features/Feature4.webp";
 
+// Emojis
 import emojiUser1 from "../src/assets/images/EmojiUser/emojiUser1.webp";
 import emojiUser2 from "../src/assets/images/EmojiUser/emojiUser2.webp";
 import emojiUser3 from "../src/assets/images/EmojiUser/emojiUser3.webp";
 import emojiUser4 from "../src/assets/images/EmojiUser/emojiUser4.webp";
 
+// More Features
 import moreFeatures1 from "../src/assets/images/MoreFeatures/MoreFeatures1.svg";
 import moreFeatures2 from "../src/assets/images/MoreFeatures/MoreFeatures2.svg";
 import moreFeatures3 from "../src/assets/images/MoreFeatures/MoreFeatures3.svg";
@@ -65,45 +68,91 @@ export const data = {
     featureCard: [
       {
         title: "Cross-Device Sync",
-        titleBg: "bg-[]",
         subText:
           "Keep your schedule in sync across all your devices, ensuring seamless access to your calendar, events, and tasks wherever you go.",
         image: moreFeatures1,
       },
       {
         title: "Auto Event Import",
-        titleBg: "bg-[#fee9cb]",
         subText:
           "Automatically import events from emails, social media, and other sources, so you never miss a beat or have to manually input details.",
         image: moreFeatures2,
       },
       {
         title: "Task Delegation",
-        titleBg: "bg-[#cceafd]",
         subText:
           "Easily assign tasks to team members, family, or friends, promoting shared responsibility and seamless collaboration.",
         image: moreFeatures3,
       },
       {
         title: "Voice Command Integration",
-        titleBg: "bg-[#ddf4e4]",
         subText:
           "Quickly create events, set reminders, or reschedule appointments with voice commands, thanks to compatibility with popular virtual assistants.",
         image: moreFeatures4,
       },
       {
         title: "Customizable Alerts",
-        titleBg: "bg-[#fdded6]",
         subText:
           "Personalize notification types and timings for events, tasks, and goals, ensuring you stay on track and informed without feeling overwhelmed.",
         image: moreFeatures5,
       },
       {
         title: "Privacy Protection",
-        titleBg: "bg-[#c39cf6]",
         subText:
           "Safeguard your personal information and event details with our robust security measures, including end-to-end encryption and optional password protection.",
         image: moreFeatures6,
+      },
+    ],
+  },
+  pricing: {
+    upperText: "Pricing and plans 💰",
+    title: "Find the best plan for your needs",
+    timeChoice: ["Monthly", "Yearly"],
+    cardConfig: [
+      {
+        plan: "Free",
+        subText: "So you can see how incredible our product is",
+        monthlyPrice: "0",
+        yearlyPrice: "0",
+        bestDeal: false,
+        features: [
+          "A cool feature",
+          "A basic feature",
+          "A top feature with limitations",
+          "An incredible feature so useful",
+          "A top feature",
+        ],
+      },
+      {
+        plan: "Starter",
+        subText: "So you can see how incredible our product is",
+        monthlyPrice: "19",
+        yearlyPrice: "15",
+        totalYearly: "180",
+        bestDeal: true,
+        features: [
+          "A cool feature",
+          "A basic feature",
+          "A top feature with limitations",
+          "An incredible feature so useful",
+          "A top feature",
+        ],
+      },
+      {
+        plan: "Pro",
+        subText: "So you can see how incredible our product is",
+        monthlyPrice: "49",
+        yearlyPrice: "45",
+        totalYearly: "540",
+        bestDeal: false,
+        features: [
+          "A cool feature",
+          "A basic feature",
+          "A top feature with limitations",
+          "An incredible feature so useful",
+          "A top feature",
+          "You need this feature",
+        ],
       },
     ],
   },
