@@ -3,6 +3,7 @@ export { Button } from './Button';
 export { Chips } from './Chips';
 export { CTA } from './CTA';
 export { Dropdown } from './Dropdown';
+export { FAQ } from './FAQ';
 export { FeatureCard } from './FeatureCard';
 export { Features } from './Features';
 export { FeatureSection } from './FeatureSection';

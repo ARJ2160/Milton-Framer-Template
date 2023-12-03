@@ -8,7 +8,7 @@ export const Pricing = () => {
   );
 
   return (
-    <div className='center-flex flex-col h-fit mt-10'>
+    <div className='center-flex flex-col h-fit my-20'>
       <div className='upperText'>{data.pricing.upperText}</div>
       <div className='headingTitle'>{data.pricing.title}</div>
       <div className='time-choice center-flex gap-5 mt-5'>

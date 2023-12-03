@@ -3,6 +3,7 @@ import './App.css';
 import {
   AppImage,
   CTA,
+  FAQ,
   Features,
   Footer,
   Home,
@@ -39,6 +40,7 @@ function App() {
         <Features />
         <MoreFeatures />
         <Pricing />
+        <FAQ />
         <CTA />
         <Footer />
       </div>
