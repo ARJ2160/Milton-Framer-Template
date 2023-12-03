@@ -6,7 +6,7 @@ export const Home = () => {
     <div className='w-full h-screen center-flex flex-col gap-7'>
       <div className='upperText'>{data.hero.heroUpperText}</div>
       <div className='headingTitle'>{data.hero.heroTitle}</div>
-      <div className='text-2xl leading-8 font-medium max-w-[50%] text-center text-gray-600 my-4'>
+      <div className='text-2xl leading-8 font-medium sm:max-w-[50%] text-center text-gray-600 my-4'>
         {data.hero.heroSubText}
       </div>
       <Button

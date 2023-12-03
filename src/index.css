@@ -8,9 +8,9 @@
 }
 
 .upperText {
-  @apply text-lightGrey font-bold leading-[120%];
+  @apply text-lightGrey font-bold md:leading-[120%] text-center;
 }
 
 .headingTitle {
-  @apply text-7xl font-extrabold leading-[80px] text-lightGrey max-w-[50%] text-center;
+  @apply lg:text-7xl md:text-5xl sm:text-3xl text-3xl font-extrabold md:leading-[80px] text-lightGrey md:max-w-[60%] text-center;
 }
