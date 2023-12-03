@@ -26,7 +26,7 @@ export const data = {
     heroSubText:
       'Here you should explain how cool your app is. Remember, focus on the benefits for your users, not on the features. ',
     ctaText: `Get Started, It's Free`,
-    buttonSubText: 'Free 14 days trials,no credit card needed'
+    buttonSubText: 'Free 14 days trials, no credit card needed'
   },
   features: {
     featuresUpperText: 'Our main features 🦸🏼',
@@ -44,6 +44,8 @@ export const data = {
       'Never miss an important deadline or event again'
     ],
     subText: [
+      'Effortlessly plan your day with our intuitive drag-and-drop interface. Sync with multiple calendar platforms, import events from emails, and add participants with just a few clicks.',
+      "Never miss an important deadline again with our AI-driven  notifications. Our app intelligently analyzes your schedule to prioritize what's most important, keeping you on track and ensuring your day is productive and stress-free.",
       'Effortlessly plan your day with our intuitive drag-and-drop interface. Sync with multiple calendar platforms, import events from emails, and add participants with just a few clicks.',
       "Never miss an important deadline again with our AI-driven  notifications. Our app intelligently analyzes your schedule to prioritize what's most important, keeping you on track and ensuring your day is productive and stress-free."
     ],
