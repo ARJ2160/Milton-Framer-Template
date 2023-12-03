@@ -6,11 +6,11 @@ export const Home = () => {
   return (
     <motion.div
       className='w-full h-screen center-flex flex-col gap-7'
-      style={{ y: 100 }}
-      animate={{ y: 0 }}
+      style={{ opacity: 0, y: 300 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{
         type: 'tween',
-        duration: 0.2
+        duration: 0.4
       }}
     >
       <div className='upperText'>{data.hero.heroUpperText}</div>
