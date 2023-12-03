@@ -43,7 +43,7 @@ export const Pricing = () => {
           );
         })}
       </div>
-      <div className='grid grid-cols-3 mt-10 gap-5'>
+      <div className='grid lg:grid-cols-3 grid-cols-1 mt-10 gap-5'>
         {data.pricing.cardConfig.map((card, i) => {
           return (
             <div
@@ -53,7 +53,9 @@ export const Pricing = () => {
               <div className='center-flex !justify-between'>
                 <Chips classNames='bg-[#334E94] text-white'>{card.plan}</Chips>
                 {card.bestDeal && (
-                  <Chips classNames='bg-black text-white'>Best Deal 🔥</Chips>
+                  <Chips classNames='bg-black text-white center-flex'>
+                    Best Deal 🔥
+                  </Chips>
                 )}
               </div>
               <div className='text-gray-500 my-7'>{card.subText}</div>

@@ -10,7 +10,7 @@ export const AppImage = () => {
         type: 'tween',
         duration: 0.5
       }}
-      className='w-full h-screen px-10 mb-20 center-flex'
+      className='w-full sm:h-screen h-fit sm:px-10 mb-20 center-flex'
     >
       <img className='' src={AppScreenshot} />
     </motion.div>

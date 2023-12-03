@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <Navbar toggle={toggle} isOpen={isOpen} />
-      <div className='px-[40px] md:pt-10 pb-0'>
+      <div className='sm:px-[40px] px-[20px] md:pt-10 pb-0'>
         <Home />
         <AppImage />
         <Features />

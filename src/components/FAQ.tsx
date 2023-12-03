@@ -46,7 +46,7 @@ export const FAQ = () => {
           type: 'tween',
           duration: 0.4
         }}
-        className='w-3/4 mt-10 grid grid-rows-5 gap-9'
+        className='w-3/4 mt-10 grid grid-rows-5 gap-9 h-screen'
       >
         {faqs &&
           faqs.map((question, index) => {
@@ -57,7 +57,7 @@ export const FAQ = () => {
                 onClick={() => handleToggle(index)}
               >
                 <div className='flex flex-row justify-between'>
-                  <div className='question flex-start text-xl text-lightGrey font-bold'>
+                  <div className='question flex-start sm:text-xl text-base text-lightGrey font-bold'>
                     {question.que}
                   </div>
                   <div className='mr-10 center-flex'>

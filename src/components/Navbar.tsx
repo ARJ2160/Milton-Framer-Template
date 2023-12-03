@@ -32,7 +32,7 @@ export const Navbar = ({ toggle, isOpen }: INavbar) => {
             return (
               <div key={key} className='text-sm text-gray-500 mr-5'>
                 <a
-                  href={'/'}
+                  href={'#'}
                   className='font-bold leading-[115%] hover:border-b-2 border-black hover:text-black'
                 >
                   {link}

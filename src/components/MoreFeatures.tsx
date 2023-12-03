@@ -6,7 +6,7 @@ export const MoreFeatures = () => {
     <div className='center-flex flex-col h-fit'>
       <div className='upperText'>{data.moreFeatures.moreFeaturesUpperText}</div>
       <div className='headingTitle'>{data.moreFeatures.moreFeaturesTitle}</div>
-      <div className='grid grid-cols-3 mt-10 gap-20'>
+      <div className='grid md:grid-cols-3 grid-cols-1 mt-10 gap-20'>
         {data.moreFeatures.featureCard.map((feature, key) => {
           return (
             <div className='col-span-1' key={key}>
