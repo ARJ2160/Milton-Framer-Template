@@ -10,7 +10,7 @@
 </div>
 <p align="center">
   <a href="https://milton-framer-template.vercel.app/" target="_blank">
-    <img alt="Logo" src="./src/assets/websiteImage.png" width="1920" height="1080" />
+    <img alt="Logo" src="./src/assets/websiteImage.png" width="1020" height="1080" />
   </a>
 </p>
 
