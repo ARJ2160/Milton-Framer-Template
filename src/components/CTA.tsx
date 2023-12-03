@@ -19,6 +19,7 @@ export const CTA = () => {
           image={UserEmoji}
           blogText={data.cta.userText}
           blogSubText={data.cta.userName}
+          extraClasses='bg-[#fee9cb]'
         />
       </div>
     </div>

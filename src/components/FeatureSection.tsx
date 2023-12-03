@@ -41,6 +41,7 @@ export const FeatureSection = ({
           image={emojiImage}
           blogText={emojiText}
           blogSubText={emojiUsername}
+          extraClasses={'bg-lightGrey text-white'}
         />
       </div>
       <div
