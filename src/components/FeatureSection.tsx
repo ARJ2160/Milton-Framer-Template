@@ -1,5 +1,6 @@
 import { twMerge } from 'tailwind-merge';
 import { Chips, UserBlob } from '.';
+import { motion } from 'framer-motion';
 
 interface IFeatureSection {
   index: number;
@@ -24,7 +25,13 @@ export const FeatureSection = ({
 }: IFeatureSection) => {
   return (
     <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-5'>
-      <div
+      <motion.div
+        style={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          type: 'tween',
+          duration: 0.3
+        }}
         className={twMerge(
           'col-span-1 flex flex-col',
           index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'
@@ -43,14 +50,25 @@ export const FeatureSection = ({
           blogSubText={emojiUsername}
           extraClasses={'bg-lightGrey text-white'}
         />
-      </div>
+      </motion.div>
       <div
         className={twMerge(
           'col-span-1 flex flex-col',
           index % 2 !== 0 ? 'lg:order-1' : 'lg:order-2'
         )}
       >
-        <img src={featureImage} className='' />
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ rotate: 360, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: 'spring',
+            stiffness: 260,
+            damping: 20
+          }}
+        >
+          <img src={featureImage} className='' />
+        </motion.div>
       </div>
     </div>
   );

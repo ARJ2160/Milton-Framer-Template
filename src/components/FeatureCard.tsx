@@ -1,4 +1,5 @@
 import { Chips } from '.';
+import { motion } from 'framer-motion';
 
 interface IFeatureCard {
   image: string;
@@ -8,7 +9,15 @@ interface IFeatureCard {
 
 export const FeatureCard = ({ image, title, subText }: IFeatureCard) => {
   return (
-    <div className='center-flex flex-col'>
+    <motion.div
+      initial={{ y: 200 }}
+      whileInView={{ y: 0 }}
+      transition={{
+        type: 'tween',
+        duration: 0.4
+      }}
+      className='center-flex flex-col transition-all '
+    >
       <div>
         <img
           className='object-fit object-center w-60 h-60'
@@ -20,6 +29,6 @@ export const FeatureCard = ({ image, title, subText }: IFeatureCard) => {
         <Chips classNames={`bg-stone-700 text-white`}>{title}</Chips>
         <div className='text-gray-500 mt-6'>{subText}</div>
       </div>
-    </div>
+    </motion.div>
   );
 };

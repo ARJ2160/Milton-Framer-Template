@@ -42,8 +42,10 @@ export const Navbar = ({ toggle, isOpen }: INavbar) => {
           })}
         </div>
         <div className='center-flex md:!flex !hidden'>
-          <Button classNames='bg-transparent text-black'>Log in</Button>
-          <Button classNames='bg-lightGrey text-white rounded-lg'>
+          <Button classNames='bg-transparent text-black hover:scale-110 transition'>
+            Log in
+          </Button>
+          <Button classNames='bg-lightGrey text-white rounded-lg hover:scale-110 transition'>
             Get Started
           </Button>
         </div>

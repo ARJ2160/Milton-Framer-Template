@@ -2,10 +2,19 @@ import { data } from '../../data/data';
 import { UserBlob } from './UserBlob';
 import UserEmoji from '../assets/images/EmojiUser/emojiUser5.webp';
 import { Button } from '.';
+import { motion } from 'framer-motion';
 
 export const CTA = () => {
   return (
-    <div className='center-flex flex-col gap-5 h-screen'>
+    <motion.div
+      initial={{ y: 200 }}
+      whileInView={{ y: 0 }}
+      transition={{
+        type: 'tween',
+        duration: 0.2
+      }}
+      className='center-flex flex-col gap-5 h-screen'
+    >
       <div className='upperText'>{data.cta.upperText}</div>
       <div className='headingTitle'>{data.cta.title}</div>
       <div className='text-gray-500 w-1/3 text-center mt-5'>
@@ -22,6 +31,6 @@ export const CTA = () => {
           extraClasses='bg-[#fee9cb]'
         />
       </div>
-    </div>
+    </motion.div>
   );
 };

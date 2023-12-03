@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { data } from '../../data/data';
 import { FaMinus, FaPlus } from 'react-icons/fa';
 import { twMerge } from 'tailwind-merge';
+import { motion } from 'framer-motion';
 
 export const FAQ = () => {
   const [faqs, setFaqs] = useState(data.faq.questions);
@@ -26,9 +27,27 @@ export const FAQ = () => {
 
   return (
     <div className='center-flex flex-col my-10'>
-      <div className='upperText'>{data.faq.upperText}</div>
-      <div className='headingTitle'>{data.faq.title}</div>
-      <div className='w-3/4 mt-10 grid grid-rows-5 gap-9'>
+      <motion.div
+        initial={{ y: 200 }}
+        whileInView={{ y: 0 }}
+        transition={{
+          type: 'tween',
+          duration: 0.4
+        }}
+        className='center-flex flex-col'
+      >
+        <div className='upperText'>{data.faq.upperText}</div>
+        <div className='headingTitle'>{data.faq.title}</div>
+      </motion.div>
+      <motion.div
+        initial={{ y: 200 }}
+        whileInView={{ y: 0 }}
+        transition={{
+          type: 'tween',
+          duration: 0.4
+        }}
+        className='w-3/4 mt-10 grid grid-rows-5 gap-9'
+      >
         {faqs &&
           faqs.map((question, index) => {
             return (
@@ -60,7 +79,7 @@ export const FAQ = () => {
               </div>
             );
           })}
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { data } from '../../data/data';
 import { Button, Chips } from '.';
+import { motion } from 'framer-motion';
 
 export const Pricing = () => {
   const [activeSection, setActiveSection] = useState<'Monthly' | 'Yearly'>(
@@ -8,7 +9,15 @@ export const Pricing = () => {
   );
 
   return (
-    <div className='center-flex flex-col h-fit my-20'>
+    <motion.div
+      initial={{ y: 200 }}
+      whileInView={{ y: 0 }}
+      transition={{
+        type: 'tween',
+        duration: 0.4
+      }}
+      className='center-flex flex-col h-fit my-20'
+    >
       <div className='upperText'>{data.pricing.upperText}</div>
       <div className='headingTitle'>{data.pricing.title}</div>
       <div className='time-choice center-flex gap-5 mt-5'>
@@ -112,6 +121,6 @@ export const Pricing = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
