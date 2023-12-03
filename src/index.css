@@ -14,3 +14,24 @@
 .headingTitle {
   @apply lg:text-7xl md:text-5xl sm:text-3xl text-3xl font-extrabold md:leading-[80px] text-lightGrey md:max-w-[60%] text-center;
 }
+
+.burger {
+  width: 30px;
+  height: 3px;
+  transition: all;
+  transition-duration: 250ms;
+  @apply bg-gray-500;
+}
+.burger-2 {
+  margin: 5px auto;
+  opacity: 1;
+}
+.toggled.burger.burger-1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggled.burger.burger-2 {
+  opacity: 0;
+}
+.toggled.burger.burger-3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

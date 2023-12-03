@@ -2,6 +2,7 @@ export { AppImage } from './AppImage';
 export { Button } from './Button';
 export { Chips } from './Chips';
 export { CTA } from './CTA';
+export { Dropdown } from './Dropdown';
 export { FeatureCard } from './FeatureCard';
 export { Features } from './Features';
 export { FeatureSection } from './FeatureSection';

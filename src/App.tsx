@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import {
   AppImage,
@@ -11,10 +12,28 @@ import {
 } from './components/index';
 
 function App() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const hideMenu = () => {
+      if (window.innerWidth > 768 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener('resize', hideMenu);
+    return () => {
+      window.removeEventListener('resize', hideMenu);
+    };
+  });
+
   return (
     <>
-      <Navbar />
-      <div className='px-[40px] pt-10 pb-0'>
+      <Navbar toggle={toggle} isOpen={isOpen} />
+      <div className='px-[40px] md:pt-10 pb-0'>
         <Home />
         <AppImage />
         <Features />

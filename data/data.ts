@@ -20,6 +20,9 @@ import moreFeatures6 from '../src/assets/images/MoreFeatures/MoreFeatures6.webp'
 
 export const data = {
   websiteName: 'Milton',
+  navbar: {
+    links: ['Features', 'Testimonials', 'Pricing', 'FAQs', 'Blog']
+  },
   hero: {
     heroUpperText: 'An other way to manage time',
     heroTitle: 'Your new favorite calendar 🗓️ app',
