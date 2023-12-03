@@ -9,7 +9,7 @@ interface INavbar {
 export const Navbar = ({ toggle, isOpen }: INavbar) => {
   return (
     <>
-      <div className='w-full h-20 p-7 border-b-2 center-flex !justify-between fixed z-10-'>
+      <div className='w-full h-20 p-7 border-b-2 bg-white center-flex !justify-between fixed z-10 top-0'>
         <div className='center-flex !justify-start'>
           <WebsiteLogo />
         </div>
