@@ -38,7 +38,9 @@ export const FeatureSection = ({
         )}
       >
         <Chips classNames='bg-[#fdded6]'>{chipText}</Chips>
-        <div className='headingTitle text-lightGrey'>{title}</div>
+        <div className='sm:text-5xl text-2xl font-extrabold leading-[130%] mt-4 text-lightGrey'>
+          {title}
+        </div>
         <div className='text-gray-500 font-medium leading-8 text-xl mt-10'>
           {subText}
         </div>
